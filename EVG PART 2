@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails EVG - Bourgogne</title>
+    <style>
+        body, html {
+            margin: 0; padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #FDFCF0; /* Blanc Crème */
+            color: #333;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 60px 0 30px 0;
+            font-size: 2rem;
+            border-bottom: 2px solid #e0ddd0;
+            padding-bottom: 10px;
+        }
+
+        /* GRILLE DE CARTES */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        /* POUR LES RESTAURANTS (3 COLONNES) */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            text-decoration: none;
+            color: inherit;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .image-placeholder {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-color: #ddd; /* Couleur par défaut si pas d'image */
+        }
+
+        .card-info {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive pour iPad / Mobile */
+        @media (max-width: 900px) {
+            .grid-3 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h2>Airbnb</h2>
+        <div class="grid">
+            <a href="https://www.airbnb.fr/rooms/28383338?adults=8&check_in=2026-04-03&check_out=2026-04-06&search_mode=regular_search&amenities%5B%5D=99&source_impression_id=p3_1767906861_P3PRhco9F5jILmAX&previous_page_section_name=1000&federated_search_id=a02f1616-1eb4-414e-803f-c554bf84d1a4" class="card">
+                <div class="image-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/6add9f67-9167-49ff-8807-f477187ec4d3.jpg?im_w=960');"></div>
+                <div class="card-info">Logement 1</div>
+            </a>
+            <a href="https://www.airbnb.fr/rooms/1247632546043082226?adults=8&check_in=2026-04-03&check_out=2026-04-06&search_mode=regular_search&source_impression_id=p3_1767906367_P3961wwEBwSX_nXT&previous_page_section_name=1000&federated_search_id=7a70cf39-7d0f-440c-8f40-947234e21218" class="card">
+                <div class="image-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/hosting/Hosting-1247632546043082226/original/b8a4b143-5190-4245-a012-9333d1cf70c7.png?im_w=960');"></div>
+                <div class="card-info">Logement 2</div>
+            </a>
+            <a href="https://www.airbnb.fr/rooms/11604246?adults=8&check_in=2026-04-03&check_out=2026-04-06&location=Beaune&search_mode=regular_search&source_impression_id=p3_1767906119_P3qea1qbvPY_ZtOo&previous_page_section_name=1001&federated_search_id=8f7b82a8-2ddb-44fe-b1d6-55454d3c892f" class="card">
+                <div class="image-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/0a1ebf65-7533-4b0d-9803-f67b279680b2.jpg?im_w=1200');"></div>
+                <div class="card-info">Logement 3</div>
+            </a>
+            <a href="https://www.airbnb.fr/rooms/43904908?viralityEntryPoint=1&s=76&source_impression_id=p3_1768140996_P3N8ouQbvlov39Vv" class="card">
+                <div class="image-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/edcf6809-4f19-4a0f-bca5-880dc96feb64.jpg?im_w=1200');"></div>
+                <div class="card-info">Logement 4</div>
+            </a>
+            <a href="https://www.airbnb.fr/rooms/53543029?viralityEntryPoint=1&s=76&source_impression_id=p3_1768141078_P3yT-AlOiWwQGS-U" class="card">
+                <div class="image-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-53543029/original/e4a8a749-1317-4f7d-ac71-a50187e8d622.jpeg?im_w=1200');"></div>
+                <div class="card-info">Logement 5</div>
+            </a>
+            <a href="https://www.airbnb.fr/rooms/8851363?adults=8&check_in=2026-04-03&check_out=2026-04-06&search_mode=regular_search&amenities%5B%5D=99&source_impression_id=p3_1768140662_P3Z_mJ_iE7uI3XtG&previous_page_section_name=1000&federated_search_id=f9c2eb74-5557-4693-9ea5-7d946e65faf4" class="card">
+                <div class="image-placeholder" style="background-image: url('https://a0.muscache.com/im/pictures/cf31561d-e9f3-428d-9ef0-97a7a47b9784.jpg?im_w=1200');"></div>
+                <div class="card-info">Logement 6</div>
+            </a>
+            </div>
+
+        <h2>Activités</h2>
+        <div class="grid">
+            <a href="https://philippelehardi.fr" class="card">
+                <div class="image-placeholder" style="background-image: url('https://philippelehardi.fr/wp-content/uploads/2022/07/diversite-vignoble.jpg');"></div>
+                <div class="card-info">Activité 1</div>
+            </a>
+            <a href="https://gaugryfromager.fr/visite/visite-guidee-pour-individuels/" class="card">
+                <div class="image-placeholder" style="background-image: url('https://gaugryfromager.fr/wp-content/uploads/2021/05/955-768x511.jpg');"></div>
+                <div class="card-info">Activité 2</div>
+            </a>
+            <a href="https://www.closdevougeot.fr/fr/visites/35/visite-guidee-nbsp-en-francais-a-10h30-et-14h30-en-semaine-16h30-les-week-ends-hors-samedi-lors-des-receptions-en-anglais-a-11h30-et-15h30-tarif-de-la-visite-guidee-15-00-euros-par-personne-nbsp-fermeture-anticipee-de-la-billetterie-a-14h30-et-de-la-boutique-a-17h-le-27-decembre-2025" class="card">
+                <div class="image-placeholder" style="background-image: url('https://www.beaune-tourisme.fr/app/uploads/beaune/2023/01/thumbs/chateau-clos-vougeot-9-1920x480-crop-1673027858.jpg');"></div>
+                <div class="card-info">Activité 3</div>
+            </a>
+            <a href="https://www.domainemontmain.com" class="card">
+                <div class="image-placeholder" style="background-image: url('https://static.wixstatic.com/media/370411_6fc134670bea4f9f88e2e14820003eb4~mv2.jpg/v1/fill/w_2388,h_1310,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/370411_6fc134670bea4f9f88e2e14820003eb4~mv2.jpg');"></div>
+                <div class="card-info">Activité 4</div>
+            </a>
+            <a href="https://reservation-hoteldieu.hospices-de-beaune.com" class="card">
+                <div class="image-placeholder" style="background-image: url('https://reservation-hoteldieu.hospices-de-beaune.com/medias/images/info_pages/multitailles/1920x1440_hotel-dieu-hospices-civils-de-beaune-accueil-vdef-31.jpg');"></div>
+                <div class="card-info">Activité 5</div>
+            </a>
+            <a href="https://www.okvoyage.com/post/autour-de-beaune/" class="card">
+                <div class="image-placeholder" style="background-image: url('https://www.okvoyage.com/wp-content/uploads/2024/03/autour-de-beaune.jpg');"></div>
+                <div class="card-info">Activité 6</div>
+            </a>
+            </div>
+
+
+        <h2>Restaurants</h2>
+        <div class="grid-3">
+            <a href="#" class="card">
+                <div class="image-placeholder" style="background-image: url('IMAGE_RESTO_1');"></div>
+                <div class="card-info">Restaurant 1</div>
+            </a>
+            <a href="#" class="card"><div class="image-placeholder"></div><div class="card-info">Restaurant 2</div></a>
+            <a href="#" class="card"><div class="image-placeholder"></div><div class="card-info">Restaurant 3</div></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
