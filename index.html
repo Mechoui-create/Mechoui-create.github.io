@@ -18,7 +18,6 @@
         /* SECTION HAUTE : IMAGE PLEIN LARGEUR */
         .section-haut {
             height: 50vh;
-            /* REMPLACE PAR TON LIEN D'IMAGE IPAD OU WEB */
             background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
                         url('https://i.ibb.co/PsGSKD0R/IMG-8309.jpg');
             background-size: cover;
@@ -35,6 +34,7 @@
             letter-spacing: 8px;
             margin: 0;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            text-align: center;
         }
 
         /* SECTION BASSE : BLANC CRÈME AVEC CARTE */
@@ -59,26 +59,22 @@
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            
-            /* Animation de base */
             display: flex;
             flex-direction: column;
             transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
-        /* EFFET AU SURVOL (AGRANDISSEMENT ET FONDU) */
+        /* EFFET AU SURVOL */
         .lien-page:hover .carte-bourgogne {
-            transform: scale(1.1); /* S'agrandit */
+            transform: scale(1.05);
             box-shadow: 0 25px 55px rgba(0,0,0,0.2);
         }
 
         .image-container {
             flex-grow: 1;
-            /* REMPLACE PAR TON IMAGE DE BOURGOGNE */
             background: url('https://corkframes.com/cdn/shop/articles/regions-and-important-areas-in-bourgogne-from-north-to-south-727956.jpg?v=1724352177&width=1200');
             background-size: cover;
             background-position: center;
-            transition: opacity 0.6s ease;
         }
 
         .nom-destination {
@@ -107,7 +103,7 @@
     </div>
 
     <div class="section-bas">
-        <a href="http://localhost:9898/Local/EVG%20RON/EVG%20PART%202?E555C32F-42D3-4329-B6F6-561B47ED973E" class="lien-page">
+        <a href="partie2.html" class="lien-page">
             <div class="carte-bourgogne">
                 <div class="image-container"></div>
                 <div class="nom-destination">Bourgogne</div>
